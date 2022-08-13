@@ -1,0 +1,40 @@
+:root{
+    --base-color: black;
+    --font-size:18px;
+    --small-size:100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+    height: 100%;
+  }
+  
+  section div {
+    flex: 1;
+    background-color: #d19494;
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+    font-size: 200%;
+    margin: 10px;
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    section div:nth-child(even){
+        display: none;
+    }
+}
